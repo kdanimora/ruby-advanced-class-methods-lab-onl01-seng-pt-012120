@@ -17,7 +17,7 @@ def self.create
 end 
 
 def self.new_by_name(str)
-  song=self.new(str)
+  song=self.new
   song.name 
   song 
 end 
