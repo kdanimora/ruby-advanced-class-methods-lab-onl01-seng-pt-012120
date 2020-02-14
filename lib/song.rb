@@ -22,14 +22,14 @@ def self.new_by_name(str)
   song 
 end 
 
-def self.create_ny_name(str)
+def self.create_by_name(str)
   song = self.new
   song.name = str 
   song 
 end 
 
 def self.find_by_name(str)
-  @@all.find {|x| p x.name.include(str)}
+  @@all.find {|x| p x.name.include?(str)}
 end 
 
 def self.find_or_create_by_name(str)
