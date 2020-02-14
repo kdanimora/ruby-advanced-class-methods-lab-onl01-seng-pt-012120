@@ -60,8 +60,11 @@ def self.create_from_filename(str)
     song.name = songname
     song.artist_name = artistname
     p song
-
 end 
 
+
+def self.destroy_all
+  @@all = []
+end 
 
 end
