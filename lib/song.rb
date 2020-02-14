@@ -28,7 +28,8 @@ def self.create_ny_name(str)
   song 
 end 
 
-def 
+def self.find_by_name(str)
+  
 end 
 
 end
