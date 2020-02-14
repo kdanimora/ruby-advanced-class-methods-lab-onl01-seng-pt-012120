@@ -40,4 +40,21 @@ def self.alphabetical
   @@all.sort_by {|s| s.name}
 end 
 
+def self.new_from_filename(str)
+  new = str.split(" - ")
+  songname = new[1].split(".mp3").join
+  artistname = new [0]
+  
+  song = self.new
+  song.name = songname
+  song.artist_name = artistname
+  p song 
+end
+
+def self.create_from_filename(str)
+  new = str.split(" - "
+  )
+end 
+
+
 end
