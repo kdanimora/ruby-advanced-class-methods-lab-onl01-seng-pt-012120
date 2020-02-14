@@ -36,7 +36,8 @@ def self.find_or_create_by_name(str)
   self.find_by_name(str) || self.create_ny_name(str)
 end 
 
-def
+def self.alphabetical 
+  @@all.sort_by {|s| s.name}
 end 
 
 end
