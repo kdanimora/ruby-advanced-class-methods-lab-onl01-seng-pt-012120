@@ -16,7 +16,7 @@ def self.create
   song 
 end 
 
-def self.new_by_name(str)
+def Song.new_by_name(str)
   song=self.new
   song.name 
   song 
@@ -28,19 +28,19 @@ def self.create_by_name(str)
   song 
 end 
 
-def self.find_by_name(str)
+def Song.find_by_name(str)
   @@all.find {|x| p x.name.include?(str)}
 end 
 
 def self.find_or_create_by_name(str)
-  self.find_by_name(str) || self.create_ny_name(str)
+  self.find_by_name(str) || self.create_by_name(str)
 end 
 
 def self.alphabetical 
   @@all.sort_by {|s| s.name}
 end 
 
-def self.new_from_filename(str)
+def Song.new_from_filename(str)
   new = str.split(" - ")
   songname = new[1].split(".mp3").join
   artistname = new [0]
