@@ -9,16 +9,26 @@ class Song
   def save
     self.class.all << self
   end
-  
-  def song Song.create 
-    Song.all.include(song)
-  end   
 
-def song Song.new_by_name
-  Song
+def self.create
+  song = self.new 
+  song.save
+  song 
 end 
 
+def self.new_by_name(str)
+  song=self.new(str)
+  song.name 
+  song 
+end 
 
+def self.create_ny_name(str)
+  song = self.new
+  song.name = str 
+  song 
+end 
 
+def 
+end 
 
 end
