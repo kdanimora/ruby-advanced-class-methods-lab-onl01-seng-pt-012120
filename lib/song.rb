@@ -25,10 +25,11 @@ end
 def self.create_by_name(str)
   song = self.new
   song.name = str 
+  song.save
   song 
 end 
 
-def Song.find_by_name(str)
+def self.find_by_name(str)
   @@all.find {|x| p x.name.include?(str)}
 end 
 
