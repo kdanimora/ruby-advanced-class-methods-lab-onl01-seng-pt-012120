@@ -29,7 +29,7 @@ def self.create_ny_name(str)
 end 
 
 def self.find_by_name(str)
-  
+  @@all.find {|x| p x.name.include(str)}
 end 
 
 end
